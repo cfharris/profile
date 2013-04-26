@@ -1,6 +1,12 @@
 #!/bin/bash
-ln -s -i -v ~/gitRepos/profile/bashrc ~/.bashrc
-ln -s -i -v ~/gitRepos/profile/vimrc ~/.vimrc
 
-# make files active
+ln -s ~/Projects/profile/alias ~/.alias
+ln -s ~/Projects/profile/vimrc ~/.vimrc
+ln -s ~/Projects/profile/bashrc ~/.bashrc
+
+# make the files active
+source ~/.alias
 source ~/.bashrc
+source ~/.vimrc
+
+

@@ -1,1 +1,6 @@
-alias lm='ls -alF --colors | more'
+alias lm='ls -alF --color | more'
+alias l='ls -l'
+alias ll='ls -la --color'
+alias ..='cd ..'
+alias ...='cd .. && cd ..'
+
