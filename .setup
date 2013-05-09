@@ -1,6 +1,17 @@
 #!/bin/bash
+<<<<<<< HEAD
 ln -s -i -v ~/Projects/profile/bashrc ~/.bashrc
 ln -s -i -v ~/Projects/profile/vimrc ~/.vimrc
+=======
+>>>>>>> 07fbd31256b8bcb55761f588c61bb9890911a968
 
-# make files active
+ln -s ~/Projects/profile/alias ~/.alias
+ln -s ~/Projects/profile/vimrc ~/.vimrc
+ln -s ~/Projects/profile/bashrc ~/.bashrc
+
+# make the files active
+source ~/.alias
 source ~/.bashrc
+source ~/.vimrc
+
+
