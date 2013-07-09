@@ -193,6 +193,10 @@ inoremap <silent> <Down> <Esc>gja
 nnoremap <silent> <Home> i <Esc>r
 nnoremap <silent> <End> a <Esc>r
 
+" Create Blank Newlines and stay in Normal mode
+nnoremap <silent> zj o<Esc>
+nnoremap <silent> zk O<Esc>
+
 " Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
 map N Nzz
@@ -207,6 +211,8 @@ inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\
 
 " Fix email paragraphs
 nnoremap <leader>par :%s/^>$//<CR>
+
+"ly$O#{{{ "lpjjj_%A#}}}jjzajj
 
 "}}}
 
@@ -227,4 +233,3 @@ syntax on
 syntax enable
 set background=dark
 colorscheme solarized
-autocmd VimEnter * echo "Remember to use jj for <ESC>"
