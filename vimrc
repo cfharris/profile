@@ -1,6 +1,8 @@
 " .vimrc
 " Charlie Harris
 
+set t_Co=256
+
 execute pathogen#infect()
 filetype plugin indent on
 
@@ -226,5 +228,5 @@ filetype plugin indent on
 syntax on
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme distinguished
 autocmd VimEnter * echo "Remember to use jj for <ESC>"

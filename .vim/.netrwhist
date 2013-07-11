@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/cfh/Projects/puppet/manifests'
 let g:netrw_dirhist_2='/home/cfh/Projects/puppet/modules'
 let g:netrw_dirhist_3='/home/cfh/Projects/puppet/modules/puppet'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/cfh/Projects/puppet/modules/nginx/manifests'
 let g:netrw_dirhist_5='/home/cfh/Projects/puppet/modules'
 let g:netrw_dirhist_6='/home/cfh/Projects/puppet/modules/mysql5_5'
 let g:netrw_dirhist_7='/home/cfh/Projects/puppet/modules/user'
+let g:netrw_dirhist_8='/home/cfh/.vim'
