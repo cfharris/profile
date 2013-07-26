@@ -5,7 +5,8 @@ set t_Co=256
 
 execute pathogen#infect()
 filetype plugin indent on
-
+filetype plugin on
+syntax on
 "{{{Auto Commands
 
 " Automatically cd into the directory that the file is in
@@ -46,10 +47,10 @@ augroup END
 " keep at least 5 lines around the cursor
 set scrolloff=5
 
-" Necesary  for lots of cool vim things
+" Necesary for lots of cool vim things
 set nocompatible
 
-" This shows what you are typing as a command.  I love this!
+" This shows what you are typing as a command.
 set showcmd
 
 " Folding Stuffs
@@ -221,11 +222,13 @@ let Tlist_Inc_Winwidth = 0
 "}}}
 
 let g:rct_completion_use_fri = 1
-"let g:Tex_DefaultTargetFormat = "pdf"
-let g:Tex_ViewRule_pdf = "kpdf"
+let g:Tex_DefaultTargetFormat = "pdf"
+let g:Tex_ViewRule_pdf = "evince"
+let g:tex_flavor='latex'
+let g:Imap_UsePlaceHolders = 0
 
-filetype plugin indent on
-syntax on
+"Add new stuff here ----------------------------------
+set grepprg=grep\ -nH\ $*
 syntax enable
 set background=dark
 colorscheme distinguished
