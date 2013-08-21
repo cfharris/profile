@@ -26,13 +26,10 @@ export EDITOR=/bin/vim
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
 test -s ~/.alias && . ~/.alias || true
-alias lm='ls -ahlF --color | more '
-alias bitlbee='sudo /usr/sbin/bitlbee'
-alias ll='ls -lh'
-alias grep='grep --color'
-alias tmux='tmux -2'
+source .alias
 
 PS1='\[\e[1;34m\]\@\[\e[m\] \[\e[0;32m\]\u\[\e[m\]\[\e[0;34m\]@\[\e[m\]\[\e[1;32m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
+
 #export TITLEBAR='\[\033]0;\u@\h:\w \007\]'
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator

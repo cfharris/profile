@@ -230,6 +230,6 @@ let g:Imap_UsePlaceHolders = 0
 "Add new stuff here ----------------------------------
 set grepprg=grep\ -nH\ $*
 syntax enable
-set background=dark
-colorscheme distinguished
+"set background=light
+"colorscheme wombat256mod
 autocmd VimEnter * echo "Remember to use jj for <ESC>"
