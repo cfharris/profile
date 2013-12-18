@@ -113,7 +113,11 @@ set incsearch
 set hlsearch
 
 " Since I use linux, I want this
-let g:clipbrdDefaultReg = '+'
+"let g:clipbrdDefaultReg = '+'
+if $TMUX == ''
+        set clipboard+=unnamed
+endif
+
 
 " When I close a tab, remove the buffer
 set nohidden
